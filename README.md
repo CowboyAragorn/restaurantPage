@@ -1,4 +1,4 @@
-# resturantPage
+# restaurantPage
 
 
 Testing git
