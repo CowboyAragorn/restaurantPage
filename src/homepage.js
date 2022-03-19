@@ -17,8 +17,15 @@ export default function home() {
 
     let directoryMenu = document.createElement('div');  
         directoryMenu.classList = 'directoryMenu'  
-            let menu = document.createElement('div');
+            let home = document.createElement('button');
+                home.innerText = 'Home';
+                home.classList = 'home';
+                home.addEventListener('click', ()=> { document.body.removeChild(homepage)})
+                directoryMenu.appendChild(home);
+            let menu = document.createElement('button');
                 menu.innerText = 'Menu';
+                menu.classList = 'menu';
+                menu.addEventListener('click', ()=> { document.body.removeChild(homepage)})
                 directoryMenu.appendChild(menu);
             let about = document.createElement('div');
                 about.innerText = 'About';
@@ -51,6 +58,10 @@ export default function home() {
             slopBurgerImg.setAttribute('src', '/home/jacob/theOdinProject/restaurantPage/src/img/slopBurger.jpg')   
             slopBurgerImg.classList = 'slopBurgerImg'
         copy.append(slopBurgerImg);
+        let imgText = document.createElement('p');
+            imgText.innerText = 'NEW Tower O\'Cheese - ONLY $5.99';
+            imgText.classList = 'imgText';
+            copy.append(imgText);
 
 
     document.body.append(homepage)
@@ -60,3 +71,4 @@ export default function home() {
     
 
 }
+

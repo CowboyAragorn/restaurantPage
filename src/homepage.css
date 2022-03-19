@@ -64,3 +64,9 @@ body {
     width: 600pt;
     border-radius: 10%;
 }
+
+.imgText{
+    text-decoration: wavy;
+    color: yellow;
+    font-size: 15pt;
+}
