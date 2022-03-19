@@ -1,0 +1,66 @@
+body {
+    background-color: blue;
+    margin: 0;
+}
+.uiDirectory{
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    margin: 0;
+    padding: 5pt;
+}
+
+.mascotImg{
+    height: 60pt;
+    width: 150pt;
+    border-radius: 50%;
+}
+
+.directoryMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60pt;
+    font-size: 20pt;
+    font-weight: bold;
+    margin-right: 20pt;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+}
+
+
+.header{
+    font-size: 50pt;
+    margin: 0;
+}
+
+.subHeader{
+    font-size: 40pt;
+    margin: 0;
+}
+
+
+.copy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20pt;
+}
+
+.copyText{
+    width: 50%;
+}
+
+.slopBurgerImg{
+    height: 300pt;
+    width: 600pt;
+    border-radius: 10%;
+}
