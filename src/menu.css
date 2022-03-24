@@ -1,0 +1,32 @@
+.menuItemContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuItemBox{
+    display: flex;
+    background-color: beige;
+    margin: 10pt;
+    align-items: center;
+    justify-content: center;
+    height: 175pt;
+    width: 350pt;
+    border: 1pt solid yellow;
+    gap: 0pt;
+    
+}
+
+.menuItem{
+    margin: 0pt;
+}
+
+.menuItemColumn{
+ 
+}
+
+.img{
+    height: 100pt;
+    width: 100pt;
+    border-radius: 50%;
+
+}

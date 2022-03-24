@@ -1,6 +1,7 @@
 import home from './homepage'; 
 import menuRender from './menu';
 import contactRender from './contact'
+import './homepage.css'
 //import './homepage.css'
 console.log('Is this thing on?');
 console.log('why is this not working');
