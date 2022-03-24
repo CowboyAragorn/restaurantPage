@@ -1,41 +1,13 @@
 import './homepage.css'
+
 export default function home() {
 
 
     let homepage = document.createElement('div')
+    homepage.classList = 'homePage';
+    homepage.id = 'homePage'
 
-    let uiDirectory = document.createElement('div');
-        uiDirectory.classList = "uiDirectory"
-
-    let mascot = document.createElement('div');
-            let mascotImg = document.createElement('img');
-            mascotImg.setAttribute('src', '/home/jacob/theOdinProject/restaurantPage/src/img/Fast Eddy.jpg')
-            mascotImg.classList = 'mascotImg';
-            mascot.append(mascotImg);
-        mascot.classList = 'mascot'
-        uiDirectory.append(mascot);
-
-    let directoryMenu = document.createElement('div');  
-        directoryMenu.classList = 'directoryMenu'  
-            let home = document.createElement('button');
-                home.innerText = 'Home';
-                home.classList = 'home';
-                home.addEventListener('click', ()=> { document.body.removeChild(homepage)})
-                directoryMenu.appendChild(home);
-            let menu = document.createElement('button');
-                menu.innerText = 'Menu';
-                menu.classList = 'menu';
-                menu.addEventListener('click', ()=> { document.body.removeChild(homepage)})
-                directoryMenu.appendChild(menu);
-            let about = document.createElement('div');
-                about.innerText = 'About';
-                directoryMenu.appendChild(about);
-            let order = document.createElement('div');
-                order.innerText = 'Order';
-                directoryMenu.appendChild(order);
-    uiDirectory.append(directoryMenu);
-
-            
+    //create DOM elements and append//
 
     let title = document.createElement('div');
         title.classList = 'title';
@@ -64,11 +36,9 @@ export default function home() {
             copy.append(imgText);
 
 
-    document.body.append(homepage)
-    homepage.appendChild(uiDirectory);   
+    document.body.append(homepage)  
     homepage.appendChild(title);
     homepage.appendChild(copy);
     
 
 }
-

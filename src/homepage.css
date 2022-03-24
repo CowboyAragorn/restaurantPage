@@ -70,3 +70,12 @@ body {
     color: yellow;
     font-size: 15pt;
 }
+
+.menubtn{
+    font-size: 20pt;
+    font-weight: bold;
+    background-color: yellow;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}

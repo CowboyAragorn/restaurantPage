@@ -1,11 +1,11 @@
 import './homepage.css'
 
-export default function menuRender() {
+export default function contactRender() {
 
 
-    let menuPage = document.createElement('div')
-    menuPage.classList = 'menuPage';
-    menuPage.id = 'menuPage'
+    let contactPage = document.createElement('div')
+    contactPage.classList = 'contactPage'; //Requires changing of value when copy paste. Don't forget//
+    contactPage.id = 'contactPage' //Requires changing of value when copy paste. Don't forget//
 
     //create DOM elements and append//
 
@@ -23,13 +23,13 @@ export default function menuRender() {
     let copy = document.createElement('div');
         copy.classList = 'copy';
         let copyText = document.createElement('p');
-            copyText.innerText = 'Get a bite to eat!' 
+            copyText.innerText = 'Call me - or don\'t!' 
             copyText.classList = 'copyText'
         copy.append(copyText);
 
-    document.body.append(menuPage)  
-    menuPage.appendChild(title);
-    menuPage.appendChild(copy);
+    document.body.append(contactPage)  
+    contactPage.appendChild(title);
+    contactPage.appendChild(copy);
     
 
 }
