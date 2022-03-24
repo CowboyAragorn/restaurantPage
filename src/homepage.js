@@ -31,7 +31,7 @@ export default function home() {
             slopBurgerImg.classList = 'slopBurgerImg'
         copy.append(slopBurgerImg);
         let imgText = document.createElement('p');
-            imgText.innerText = 'NEW Tower O\'Cheese - ONLY $5.99';
+            imgText.innerText = 'OLD Tower O\'Cheese - ONLY $5.99';
             imgText.classList = 'imgText';
             copy.append(imgText);
 

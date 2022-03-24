@@ -23,7 +23,7 @@ export default function contactRender() {
     let copy = document.createElement('div');
         copy.classList = 'copy';
         let copyText = document.createElement('p');
-            copyText.innerText = 'Call me - or don\'t!' 
+            copyText.innerText = 'Call me - or don\'t but I do love you though!' 
             copyText.classList = 'copyText'
         copy.append(copyText);
 

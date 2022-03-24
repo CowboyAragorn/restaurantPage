@@ -23,7 +23,7 @@ export default function menuRender() {
     let copy = document.createElement('div');
         copy.classList = 'copy';
         let copyText = document.createElement('p');
-            copyText.innerText = 'Get a bite to eat!' 
+            copyText.innerText = 'Get a bite to eat' 
             copyText.classList = 'copyText'
         copy.append(copyText);
 
