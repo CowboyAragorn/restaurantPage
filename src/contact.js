@@ -16,7 +16,7 @@ export default function contactRender() {
         header.classList = 'header'
         title.appendChild(header);
     let subHeader = document.createElement('h2');
-        subHeader.innerText = 'Home of the Fat Shake & Grease Fries';
+        subHeader.innerText = 'Home of the Lard Shake & Grease Fries';
         subHeader.classList = 'subHeader'
         title.appendChild(subHeader);
 

@@ -1,8 +1,9 @@
 .menuItemContainer{
     display: flex;
+    flex-wrap: wrap;
     align-items: left;
-    width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .menuItemBox{
     display: flex;
@@ -11,28 +12,57 @@
     margin: 10pt;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
     border: 5pt red groove;
-    gap: 20pt;
-    
+    padding: 3%;
+    padding-right: 5%;
+    padding-left: 5%;    
+    width: fit-content;
     
 }
 
-.menuItem{
+.menuItem, .price, .menuItemName{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin: 0;
+    overflow-wrap: break-word;
    
+}
+
+.menuItemName{
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+.price, .menuItem{
+    font-size: 12pt;
+    font-weight: 100;
+}
+
+
+.price{
+    margin-top: 20pt;
 }
 
 .menuItemRow{
     display: flex;
-    margin-left: 5%;
+    margin: 3%;
     justify-content: left;
     align-items: center;
     height: 10%;
     gap: 10pt;
-    margin-left: 3%;
-    margin-right: 3%;
+    overflow-wrap: break-word;
+    max-width: 100%;
+
  
+}
+
+.column{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0%;
 }
 
 .horizonalLine{
@@ -41,8 +71,17 @@
 }
 
 .img{
-    height: 100pt;
-    width: 100pt;
+    height: 125pt;
+    width: 125pt;
     border-radius: 50%;
 
+}
+
+
+.menuNumber{
+    font-weight: bold;
+    font-size: 20pt;
+    border: 3pt black solid;
+    background-color: yellow;
+    color: black;
 }

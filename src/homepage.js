@@ -16,14 +16,14 @@ export default function home() {
         header.classList = 'header'
         title.appendChild(header);
     let subHeader = document.createElement('h2');
-        subHeader.innerText = 'Home of the Fat Shake & Grease Fries';
+        subHeader.innerText = 'Home of the Lard Shake & Grease Fries';
         subHeader.classList = 'subHeader'
         title.appendChild(subHeader);
 
     let copy = document.createElement('div');
         copy.classList = 'copy';
         let copyText = document.createElement('p');
-            copyText.innerText = 'People come to Fast Eddy\'s for the casual atmosphere, down home cooking, and simple minded employees. People stay because of the food poisoning. The city health inspector called us "worse than CiCi\'s", but here at Fast Eddy\'s - We Let the Customer Decide.' 
+            copyText.innerText = 'People come to Fast Eddy\'s for the casual atmosphere, down home cooking, and simple minded employees. People stay because of the food poisoning. The city health inspector called us "worse than CiCi\'s". Too fast to be good!.' 
             copyText.classList = 'copyText'
             copy.append(copyText);
         let slopBurgerImg = document.createElement('img');
