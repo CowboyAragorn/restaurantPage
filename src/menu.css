@@ -1,27 +1,43 @@
 .menuItemContainer{
     display: flex;
-    align-items: center;
+    align-items: left;
+    width: 100%;
     justify-content: center;
 }
 .menuItemBox{
     display: flex;
-    background-color: beige;
+    flex-wrap: wrap;
+    background-color: white;
     margin: 10pt;
     align-items: center;
-    justify-content: center;
-    height: 175pt;
-    width: 350pt;
-    border: 1pt solid yellow;
-    gap: 0pt;
+    justify-content: space-between;
+    width: 60%;
+    border: 5pt red groove;
+    gap: 20pt;
+    
     
 }
 
 .menuItem{
-    margin: 0pt;
+    margin: 0;
+   
 }
 
-.menuItemColumn{
+.menuItemRow{
+    display: flex;
+    margin-left: 5%;
+    justify-content: left;
+    align-items: center;
+    height: 10%;
+    gap: 10pt;
+    margin-left: 3%;
+    margin-right: 3%;
  
+}
+
+.horizonalLine{
+    color: black;
+    background-color: black;
 }
 
 .img{

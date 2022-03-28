@@ -22,13 +22,70 @@ export default function menuRender() {
         title.appendChild(subHeader);
 
 
+
+
+
+        let menuItemContainer1 = document.createElement('div');
+            menuItemContainer1.classList = 'menuItemContainer';
+        let menuItemBox = document.createElement('div');
+            menuItemBox.classList = 'menuItemBox';
+            menuItemContainer1.append(menuItemBox);
+
+        //List menu items as objects, place into array//
+
+        let item1 = ['https://64.media.tumblr.com/0335ddf417f2504da59bfb777cc0b97a/tumblr_mzvydiEra61tp16yeo1_640.jpg','*NEW* Tower O\'Cheese', '$9.99'];
+        let item2 = ['https://64.media.tumblr.com/0335ddf417f2504da59bfb777cc0b97a/tumblr_mzvydiEra61tp16yeo1_640.jpg','*NEW* Tower O\'Cheese', '$9.99'];
+        let item3 = ['https://64.media.tumblr.com/0335ddf417f2504da59bfb777cc0b97a/tumblr_mzvydiEra61tp16yeo1_640.jpg','*NEW* Tower O\'Cheese', '$9.99'];
+        let item4 = ['https://64.media.tumblr.com/0335ddf417f2504da59bfb777cc0b97a/tumblr_mzvydiEra61tp16yeo1_640.jpg','*NEW* Tower O\'Cheese', '$9.99'];
+        let item5 = ['https://64.media.tumblr.com/0335ddf417f2504da59bfb777cc0b97a/tumblr_mzvydiEra61tp16yeo1_640.jpg','*NEW* Tower O\'Cheese', '$9.99'];
+        let item6 = ['https://64.media.tumblr.com/0335ddf417f2504da59bfb777cc0b97a/tumblr_mzvydiEra61tp16yeo1_640.jpg','*NEW* Tower O\'Cheese', '$9.99'];
+
+        let menuArray = [item1, item2, item3, item4, item5, item6];
+
+        //Loop through the array attaching menu objects to divs for display. There is a good deal of connection with this for loop & the css//
+        for (let i=0; i < menuArray.length; i++){
+            let menuItemRow = document.createElement('div');
+            menuItemRow.classList = 'menuItemRow';
+            let menuNumber = document.createElement('p');
+                    menuNumber.innerText = '#' + (i+1);
+                    menuNumber.classList - 'menuNumber';
+                    menuItemRow.append(menuNumber);
+            let itemImg = document.createElement('img');
+                    itemImg.src = (menuArray[i])[0];
+                    itemImg.classList = 'img';
+                    menuItemRow.append(itemImg);
+            let menuItem0 = document.createElement('p');
+                    menuItem0.innerText = (menuArray[i])[1];
+                    menuItem0.classList = 'menuItem';
+                    menuItemRow.append(menuItem0);
+            /* let horizontalLine = document.createElement('hr');
+                    horizontalLine.style.height = '.25pt';
+                    horizontalLine.style.width = '50%';
+                    horizontalLine.classList = 'horizonalLine';
+                    menuItemRow.append(horizontalLine);
+            */
+            let menuPrice = document.createElement('p');
+                    menuPrice.innerText = (menuArray[i])[2];
+                    menuPrice.classList = 'menuItem';
+                    menuItem0.append(menuPrice);
+            menuItemBox.append(menuItemRow);
+        }
+
+
+
+
+        //old menu concept//
+/*
 //Define the menu items & push to an array//
         const fatBurger = ['Slop Burger', '$5.99', '100% Locally Harvested Fat', "/home/jacob/theOdinProject/restaurantPage/src/img/slopBurger.jpg"];
         const fatShake = ['Fat Shake', '$2.99', "Goes down smooth", 'imgplaceholder'];
         const greaseFries = ['Grease Fries','$.99', 'Something this good shouldn\'t be this cheap', 'img']
         const chikHon = ['ChikHon', '$6.99', 'Yeah we do this too', 'img']
+        const item5 = ['Item 5', '$4.99', 'Description', 'https://www.simplyrecipes.com/thmb/8caxM88NgxZjz-T2aeRW3xjhzBg=/2000x1125/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-3-8f256746d649404baa36a44d271329bc.jpg'];
+        const item6 = ['Item 6', '$5.99', 'Description', 'img']
 
-        let menuArray = [fatBurger, fatShake, greaseFries, chikHon]
+
+        let menuArray = [fatBurger, fatShake, greaseFries, chikHon, item5, item6]
 
         let menuItemContainer1 = document.createElement('div');
         let menuItemContainer2 = document.createElement('div');
@@ -71,13 +128,17 @@ export default function menuRender() {
         else{
             menuItemContainer2.append(menuItemBox);  
         }
+        
     }
 
-console.log(fatBurger)
+*/
+
+//Attach the stuff//
+    //console.log(fatBurger)
     document.body.append(menuPage)  
     menuPage.appendChild(title);
     menuPage.appendChild(menuItemContainer1);
-    menuPage.appendChild(menuItemContainer2);
+    //menuPage.appendChild(menuItemContainer2);
     
 
 }
