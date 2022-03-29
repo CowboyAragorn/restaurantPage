@@ -20,25 +20,64 @@ export default function home() {
         subHeader.classList = 'subHeader'
         title.appendChild(subHeader);
 
+
+        
     let copy = document.createElement('div');
-        copy.classList = 'copy';
+    copy.classList = 'copy';
+        let banner = document.createElement('li');
+            banner.classList = 'banner';
+            copy.append(banner);
         let copyText = document.createElement('p');
-            copyText.innerText = 'People come to Fast Eddy\'s for the casual atmosphere, down home cooking, and simple minded employees. People stay because of the food poisoning. The city health inspector called us "worse than CiCi\'s". Too fast to be good!.' 
-            copyText.classList = 'copyText'
-            copy.append(copyText);
-        let slopBurgerImg = document.createElement('img');
-            slopBurgerImg.setAttribute('src', '/home/jacob/theOdinProject/restaurantPage/src/img/slopBurger.jpg')   
-            slopBurgerImg.classList = 'slopBurgerImg'
-        copy.append(slopBurgerImg);
+            copyText.innerText = 'Top Customer Reviews:' 
+            copyText.classList = 'copyTextHeading'
+            banner.append(copyText);
+         let copyText2 = document.createElement('ol');
+            copyText2.innerText = '"Worse than CiCi\'s"' 
+            copyText2.classList = 'copyText'
+            banner.append(copyText2);
+         let copyText3 = document.createElement('p');
+            copyText3.innerText = '"Too fast for your own good"' 
+            copyText3.classList = 'copyText'
+            banner.append(copyText3);
+         let copyText4 = document.createElement('p');
+            copyText4.innerText = '"I\'ll still keep eating this garbage"' 
+            copyText4.classList = 'copyText'
+            banner.append(copyText4);
+
+        let photoDiv = document.createElement('div');
+            photoDiv.classList = "photoDiv"
+            copy.append(photoDiv)    
+        let visitUs = document.createElement('img');
+            visitUs.setAttribute('src', 'https://images.squarespace-cdn.com/content/v1/5c8eb730d86cc97933ba3164/1556827374126-L5W7IA9HVGY1SGR3IHXV/my-house-is-falling-apart-and-i-cant-afford-to-fix-it.jpg')   
+            visitUs.classList = 'slopBurgerImg'
+            photoDiv.append(visitUs);
         let imgText = document.createElement('p');
-            imgText.innerText = 'New Tower O\'Cheese - ONLY $5.99';
+            imgText.innerText = 'The ORIGINAL Fast Eddy\'s Est. 1972';
             imgText.classList = 'imgText';
-            copy.append(imgText);
+            photoDiv.append(imgText);
 
 
+        let banner2 = document.createElement('div');
+            banner2.classList = 'banner2';
+        let bannerText = document.createElement('p');
+            bannerText.innerText = 'Stop on by! Give us a chance! Please...' 
+            bannerText.classList = 'bannerText'
+            banner2.append(bannerText);
+
+
+let footer = document.createElement('div');
+    footer.classList = 'footer';
+    let footerText = document.createElement('div')
+        footerText.classList = 'footerText';
+        footerText.innerText = 'Created by CowboyAragorn 3/22'
+        footer.append(footerText)
+
+        
     document.body.append(homepage)  
     homepage.appendChild(title);
     homepage.appendChild(copy);
+    homepage.append(banner2);
+    document.body.append(footer)
     
 
 }

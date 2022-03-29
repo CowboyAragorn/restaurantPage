@@ -8,15 +8,16 @@
 .menuItemBox{
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: #0047ab;
     margin: 10pt;
     align-items: center;
     justify-content: space-between;
-    border: 5pt red groove;
     padding: 3%;
     padding-right: 5%;
-    padding-left: 5%;    
+    padding-left: 5%;
+    padding-top: 0%;    
     width: fit-content;
+    color: white;
     
 }
 
@@ -53,6 +54,8 @@
     gap: 10pt;
     overflow-wrap: break-word;
     max-width: 100%;
+    padding-bottom: 8pt;
+    border-bottom: 1pt yellow dashed;
 
  
 }
