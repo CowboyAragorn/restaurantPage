@@ -24,6 +24,7 @@ export default function home() {
         
     let copy = document.createElement('div');
     copy.classList = 'copy';
+       
         let banner = document.createElement('li');
             banner.classList = 'banner';
             copy.append(banner);
@@ -64,20 +65,21 @@ export default function home() {
             bannerText.classList = 'bannerText'
             banner2.append(bannerText);
 
-
+/*
 let footer = document.createElement('div');
     footer.classList = 'footer';
     let footerText = document.createElement('div')
         footerText.classList = 'footerText';
         footerText.innerText = 'Created by CowboyAragorn 3/22'
         footer.append(footerText)
-
+*/
         
     document.body.append(homepage)  
     homepage.appendChild(title);
     homepage.appendChild(copy);
     homepage.append(banner2);
-    document.body.append(footer)
+    //document.body.append(footer)
     
 
 }
+

@@ -1,0 +1,52 @@
+.copy{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    margin-left: 10%;
+    font-size: 20pt;
+    gap: 100pt;
+    margin-bottom: 15pt;
+}
+
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 30pt;
+    background-color: white;
+    color: black;
+    border: black 1pt inset ;
+    box-shadow: 5px 5px;
+}
+
+
+.copyTextHeading{
+    font-weight: bold;
+    font-size: 25pt;
+    margin: 0;
+    margin-bottom: 10pt;
+    border-bottom: solid #0047ab 2pt;
+}
+
+
+.copyText{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    max-width: 100%;
+    background-color: white;
+    color: black;
+    margin: 0;
+    margin-bottom: 6pt;
+    padding: 0;
+}
+
+
+.map{
+    width: 800px;  
+    height:400px;
+}
