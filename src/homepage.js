@@ -21,6 +21,7 @@ export default function home() {
         title.appendChild(subHeader);
 
 
+//Items below title
         
     let copy = document.createElement('div');
     copy.classList = 'copy';

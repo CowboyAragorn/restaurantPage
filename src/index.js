@@ -72,13 +72,12 @@ let footer = document.createElement('div');
 
 
 directoryBar();
-//home();
+home();
 
-//menuRender();
-contactRender();
+
 
 //Declare pagenames by ID here so that the menu can remove them each with event listeners. Declared AFTER home so that there is something to actually id//
 let homePage = document.getElementById('homePage');
 let menuPage = document.getElementById('menuPage');;
 let contactPage = document.getElementById('contactPage');
-let currentPage = contactPage;     
+let currentPage = homePage;     
